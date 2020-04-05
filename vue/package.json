@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@pitlet/transform-js-module": "^1.0.1",
-    "@pitlet/transform-vue": "^1.0.0",
-    "vue": "^3.0.0-alpha.10"
+    "@pitlet/transform-vue": "^1.0.1",
+    "vue": "^3.0.0-alpha.11"
   }
 }
