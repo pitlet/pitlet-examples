@@ -1,6 +1,12 @@
 import { render, h } from 'preact'
 import { App } from './App'
 
-document.body.innerHTML = '<div id="app"></div>' // this is for hot reloading
-
 render(<App />, document.getElementById('app'))
+
+if (module.hot) {
+  // enable hot reloading
+  module.hot.accept('./App', () => {
+    const NewApp = require('./App').App
+    render(<NewApp />, document.getElementById('app'))
+  })
+}
