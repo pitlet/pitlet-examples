@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@pitlet/transform-js-module": "^1.0.1",
+    "@pitlet/transform-js-module": "^1.0.5",
     "@pitlet/transform-vue": "^1.0.1",
     "vue": "^3.0.0-alpha.11"
   }

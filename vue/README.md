@@ -17,3 +17,5 @@ If everything works, the dev server should start automatically on `http://localh
 
 it also works when requiring ../web_modules/vue.js, basically vanilla without npm
  -->
+
+<!-- TODO react is broken -->

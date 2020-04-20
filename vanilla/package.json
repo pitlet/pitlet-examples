@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@pitlet/transform-js-module": "^1.0.1"
+    "@pitlet/transform-js-module": "^1.0.5"
   }
 }
