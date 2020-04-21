@@ -4,12 +4,25 @@ const {
   transformVuePostTransformBlock,
   transformVueTemplate,
 } = require("@pitlet/transform-vue");
+const { validateWithEslint } = require("@pitlet/validate-with-eslint");
+
+const validateWithEslintOptions = {
+  baseConfig: require("./.eslintrc.js"),
+};
 
 const transformFunctionMap = {
-  vue: [transformVue, transformJsModule],
+  vue: [
+    validateWithEslint(validateWithEslintOptions),
+    transformVue,
+    transformJsModule,
+  ],
   "vue-html": [transformVueTemplate, transformJsModule],
-  "vue-js": [transformJsModule, transformVuePostTransformBlock],
-  js: [transformJsModule],
+  "vue-js": [
+    validateWithEslint(validateWithEslintOptions),
+    transformJsModule,
+    transformVuePostTransformBlock,
+  ],
+  js: [validateWithEslint(validateWithEslintOptions), transformJsModule],
 };
 
 module.exports = {
