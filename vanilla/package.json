@@ -1,17 +1,11 @@
 {
-  "name": "playground",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "vanilla-example",
+  "version": "0.0.0-dev",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "@pitlet/package-js": "^1.0.11",
+    "@pitlet/package-js": "^1.0.12",
     "@pitlet/transform-js-module": "^1.0.5"
   }
 }
