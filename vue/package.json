@@ -1,5 +1,5 @@
 {
-  "name": "pitlet-example-vue",
+  "name": "pitlet-vue-example",
   "version": "0.0.0-dev",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,11 +1,11 @@
-const { transformJsModule } = require("@pitlet/transform-js-module");
-const { transformPreact } = require("@pitlet/transform-preact");
-const path = require("path");
-
-const transformFunctionMap = {
-  js: [transformPreact, transformJsModule],
-};
+const { transformJsModule } = require('@pitlet/transform-js-module')
+const { transformPreact } = require('@pitlet/transform-preact')
+const { packageJs } = require('@pitlet/package-js')
 
 module.exports = {
-  transformFunctionMap,
-};
+  entryPath: `${__dirname}/src/index.js`,
+  transformFunctionMap: {
+    js: [transformPreact, transformJsModule],
+  },
+  packageFunctions: [packageJs],
+}
