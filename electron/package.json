@@ -1,0 +1,10 @@
+{
+  "name": "pitlet-electron-example",
+  "version": "0.0.0-dev",
+  "scripts": {
+    "dev": "electron packages/main-process/src/mainProcess.js"
+  },
+  "devDependencies": {
+    "electron": "^9.0.0-beta.22"
+  }
+}
