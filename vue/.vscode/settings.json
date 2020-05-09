@@ -1,5 +1,7 @@
 {
   "eslint.options": {
     "extensions": [".js", ".vue"]
-  }
+  },
+  "vetur.format.enable": false,
+  "vetur.validation.template": false
 }
