@@ -1,13 +1,11 @@
-// const { transformCss } = require('../../../../../bundler3/packages/transform/transform-css/dist/transformCss')
-const { transformJsModule } = require("@pitlet/transform-js-module");
-const { transformReact } = require("@pitlet/transform-react");
-const path = require("path");
-
-const transformFunctionMap = {
-  js: [transformReact, transformJsModule],
-  // css: [transformCss],
-};
+const { transformJsModule } = require('@pitlet/transform-js-module')
+const { transformReact } = require('@pitlet/transform-react')
+const { packageJs } = require('@pitlet/package-js')
 
 module.exports = {
-  transformFunctionMap,
-};
+  entryPath: `${__dirname}/src/index.js`,
+  transformFunctionMap: {
+    js: [transformReact, transformJsModule],
+  },
+  packageFunctions: [packageJs],
+}

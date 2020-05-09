@@ -1,5 +1,7 @@
 # React Example
 
+TODO: This example is current broken, you can try out the preact example in the meantime.
+
 ## Quickstart
 
 ```

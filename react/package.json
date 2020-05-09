@@ -1,18 +1,16 @@
 {
-  "name": "playground",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "react-example",
+  "version": "0.0.0-dev",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@pitlet/transform-js-module": "^1.0.5",
-    "@pitlet/transform-react": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@pitlet/transform-js-module": "^1.0.5",
+    "@pitlet/transform-react": "^1.0.0",
+    "@pitlet/package-js": "^1.0.12"
   }
 }
